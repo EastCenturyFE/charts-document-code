@@ -4,11 +4,11 @@
 
 ## 样式
 
-图表基于[CRender](http://crender.jiaminghi.com)渲染，在配置项中有关样式的配置都基于其`Style`类，完整配置项可查阅[Class Style](http://crender.jiaminghi.com/guide/style.html)，但并非所有配置项都能生效，因为他们可能会被覆盖。
+图表基于[CRender](https://eastcenturyfe.github.io/crender-document-code)渲染，在配置项中有关样式的配置都基于其`Style`类，完整配置项可查阅[Class Style](https://eastcenturyfe.github.io/crender-document-code/guide/style.html)，但并非所有配置项都能生效，因为他们可能会被覆盖。
 
 ## 动画
 
-图表数据发生变化时，会伴随动画，配置不同的缓动曲线可以带来不同的动画效果。[Transition](http://transition.jiaminghi.com)为`CRender`提供了动效支持，查看完整缓动曲线表请移步[曲线表](http://transition.jiaminghi.com/curveTable/)。
+图表数据发生变化时，会伴随动画，配置不同的缓动曲线可以带来不同的动画效果。[Transition](https://eastcenturyfe.github.io/transition-document-code)为`CRender`提供了动效支持，查看完整缓动曲线表请移步[曲线表](https://eastcenturyfe.github.io/transition-document-code/curveTable/)。
 
 ## 颜色
 
