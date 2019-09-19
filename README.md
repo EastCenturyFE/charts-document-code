@@ -1,7 +1,7 @@
-<h1 align="center"><a href="http://charts.jiaminghi.com">charts.jiaminghi.com</a></h1>
+<h1 align="center"><a href="http://charts.jiaminghi.com">charts</a></h1>
 
 <p align="center">
-    <a href="https://github.com/jiaming743/charts.jiaminghi.com/blob/master/LICENSE"><img src="https://img.shields.io/github/license/jiaming743/charts.jiaminghi.com.svg" alt="LICENSE" /> </a>
+    <a href="https://github.com/EastCenturyFE/charts-document-code/blob/master/LICENSE"><img src="https://img.shields.io/github/license/jiaming743/charts.jiaminghi.com.svg" alt="LICENSE" /> </a>
 </p>
 
 ### Project setup
@@ -22,4 +22,4 @@ yarn dev
 yarn build
 ```
 
-[Charts](https://github.com/jiaming743/charts)
+[Charts](https://github.com/east-century-fex/charts)

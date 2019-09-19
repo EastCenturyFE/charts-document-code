@@ -2,6 +2,7 @@
 node_modules
 dist
 deploy/config.js
+packagebak.json
 
 # local env files
 .env.local

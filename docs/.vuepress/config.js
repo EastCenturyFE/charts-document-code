@@ -6,6 +6,7 @@ module.exports = {
   ],
   host: 'localhost',
   port: 5003,
+  base: '/charts-document-code/',
   themeConfig: {
     selectText: '选择语言',
     label: '简体中文',
@@ -24,7 +25,7 @@ module.exports = {
       },
       {
         text: 'GitHub',
-        link: 'https://github.com/jiaming743/charts'
+        link: 'https://github.com/east-century-fex/charts'
       }
     ],
     sidebar: {

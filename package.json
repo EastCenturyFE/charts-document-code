@@ -1,10 +1,10 @@
 {
-  "name": "charts.jiaminghi.com",
+  "name": "charts",
   "version": "1.0.0",
-  "author": "JiaMing <743192023@qq.com>",
+  "author": "fex <fex@hndfsj.com>",
   "scripts": {
     "build": "vuepress build docs",
-    "deploy": "node deploy/index.js",
+    "deploy": "bash deploy.sh",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vuepress dev docs"
   },
@@ -25,5 +25,5 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "repository": "https://github.com/jiaming743/Charts.git"
+  "repository": "https://github.com/east-century-fex/charts.git"
 }
