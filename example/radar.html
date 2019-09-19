@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>雷达图 | Charts</title>
+    <meta name="description" content="轻量级图表">
+    <link rel="icon" href="/charts-document-code/favicon.ico">
+    
+    <link rel="preload" href="/charts-document-code/assets/css/0.styles.86b1c1b3.css" as="style"><link rel="preload" href="/charts-document-code/assets/js/app.731d7402.js" as="script"><link rel="preload" href="/charts-document-code/assets/js/5.ec90377f.js" as="script"><link rel="preload" href="/charts-document-code/assets/js/31.40f6c943.js" as="script"><link rel="preload" href="/charts-document-code/assets/js/6.1e4d43cf.js" as="script"><link rel="prefetch" href="/charts-document-code/assets/js/1.43c40784.js"><link rel="prefetch" href="/charts-document-code/assets/js/10.790233e7.js"><link rel="prefetch" href="/charts-document-code/assets/js/11.763d3ad8.js"><link rel="prefetch" href="/charts-document-code/assets/js/12.fe21ef1c.js"><link rel="prefetch" href="/charts-document-code/assets/js/13.56d110b8.js"><link rel="prefetch" href="/charts-document-code/assets/js/14.50840d7f.js"><link rel="prefetch" href="/charts-document-code/assets/js/15.04387d1b.js"><link rel="prefetch" href="/charts-document-code/assets/js/16.ab57aa7a.js"><link rel="prefetch" href="/charts-document-code/assets/js/17.ad65199f.js"><link rel="prefetch" href="/charts-document-code/assets/js/18.f6f76c9b.js"><link rel="prefetch" href="/charts-document-code/assets/js/19.8dce57c7.js"><link rel="prefetch" href="/charts-document-code/assets/js/2.8f24913a.js"><link rel="prefetch" href="/charts-document-code/assets/js/20.4e80c39e.js"><link rel="prefetch" href="/charts-document-code/assets/js/21.70ad0856.js"><link rel="prefetch" href="/charts-document-code/assets/js/22.ccf1d745.js"><link rel="prefetch" href="/charts-document-code/assets/js/23.d8ec4895.js"><link rel="prefetch" href="/charts-document-code/assets/js/24.51626b97.js"><link rel="prefetch" href="/charts-document-code/assets/js/25.726f293d.js"><link rel="prefetch" href="/charts-document-code/assets/js/26.ee545aa8.js"><link rel="prefetch" href="/charts-document-code/assets/js/27.0f83fc0f.js"><link rel="prefetch" href="/charts-document-code/assets/js/28.2ea99494.js"><link rel="prefetch" href="/charts-document-code/assets/js/29.f42586a7.js"><link rel="prefetch" href="/charts-document-code/assets/js/3.cb350d97.js"><link rel="prefetch" href="/charts-document-code/assets/js/30.5eef15ec.js"><link rel="prefetch" href="/charts-document-code/assets/js/32.3c597654.js"><link rel="prefetch" href="/charts-document-code/assets/js/33.3f45b2dc.js"><link rel="prefetch" href="/charts-document-code/assets/js/7.f2eccd42.js"><link rel="prefetch" href="/charts-document-code/assets/js/8.c10c8e02.js"><link rel="prefetch" href="/charts-document-code/assets/js/9.0491f890.js">
+    <link rel="stylesheet" href="/charts-document-code/assets/css/0.styles.86b1c1b3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/charts-document-code/" class="home-link router-link-active"><!----> <span class="site-name">Charts</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/charts-document-code/guide/" class="nav-link">指南</a></div><div class="nav-item"><a href="/charts-document-code/config/" class="nav-link">配置项</a></div><div class="nav-item"><a href="/charts-document-code/example/" class="nav-link router-link-active">实例</a></div><div class="nav-item"><a href="https://github.com/east-century-fex/charts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/charts-document-code/guide/" class="nav-link">指南</a></div><div class="nav-item"><a href="/charts-document-code/config/" class="nav-link">配置项</a></div><div class="nav-item"><a href="/charts-document-code/example/" class="nav-link router-link-active">实例</a></div><div class="nav-item"><a href="https://github.com/east-century-fex/charts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/charts-document-code/example/" class="sidebar-link">实例</a></li><li><a href="/charts-document-code/example/line.html" class="sidebar-link">折线图</a></li><li><a href="/charts-document-code/example/bar.html" class="sidebar-link">柱状图</a></li><li><a href="/charts-document-code/example/pie.html" class="sidebar-link">饼状图</a></li><li><a href="/charts-document-code/example/radar.html" class="active sidebar-link">雷达图</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/charts-document-code/example/radar.html#基本雷达图" class="sidebar-link">基本雷达图</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/example/radar.html#多边形雷达图" class="sidebar-link">多边形雷达图</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/example/radar.html#多组雷达图" class="sidebar-link">多组雷达图</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/example/radar.html#背景配色" class="sidebar-link">背景配色</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/example/radar.html#多背景配色" class="sidebar-link">多背景配色</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/example/radar.html#层叠背景配色" class="sidebar-link">层叠背景配色</a></li></ul></li><li><a href="/charts-document-code/example/gauge.html" class="sidebar-link">仪表盘</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="雷达图"><a href="#雷达图" aria-hidden="true" class="header-anchor">#</a> 雷达图</h1> <h2 id="基本雷达图"><a href="#基本雷达图" aria-hidden="true" class="header-anchor">#</a> 基本雷达图</h2> <div class="demo"><div class="chart"></div> <div class="action"><div class="btn blue">切换数据</div> <div class="btn green">重置</div></div></div> <div class="fold-box"><div class="tip">点击以展开或折叠</div> <div class="fold-container fold"><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> option1 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  radar<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    indicator<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'西峡'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'周口'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'南阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'驻马店'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'郑州'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'洛阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'radar'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">111</span><span class="token punctuation">,</span> <span class="token number">256</span><span class="token punctuation">,</span> <span class="token number">178</span><span class="token punctuation">,</span> <span class="token number">152</span><span class="token punctuation">,</span> <span class="token number">266</span><span class="token punctuation">,</span> <span class="token number">132</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> option2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  radar<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    indicator<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'西峡'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'周口'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'南阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'驻马店'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'郑州'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'洛阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'radar'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">223</span><span class="token punctuation">,</span> <span class="token number">189</span><span class="token punctuation">,</span> <span class="token number">214</span><span class="token punctuation">,</span> <span class="token number">265</span><span class="token punctuation">,</span> <span class="token number">178</span><span class="token punctuation">,</span> <span class="token number">155</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">[</span>option1<span class="token punctuation">,</span> option2<span class="token punctuation">]</span></code></pre></div></div></div> <h2 id="多边形雷达图"><a href="#多边形雷达图" aria-hidden="true" class="header-anchor">#</a> 多边形雷达图</h2> <div class="demo"><div class="chart"></div> <div class="action"><div class="btn blue">切换数据</div> <div class="btn green">重置</div></div></div> <div class="fold-box"><div class="tip">点击以展开或折叠</div> <div class="fold-container fold"><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> option1 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  radar<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    polygon<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    indicator<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'西峡'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'周口'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'南阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'驻马店'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'郑州'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'洛阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'radar'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">111</span><span class="token punctuation">,</span> <span class="token number">256</span><span class="token punctuation">,</span> <span class="token number">178</span><span class="token punctuation">,</span> <span class="token number">152</span><span class="token punctuation">,</span> <span class="token number">266</span><span class="token punctuation">,</span> <span class="token number">132</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      animationCurve<span class="token punctuation">:</span> <span class="token string">'easeOutBack'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> option2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  radar<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    polygon<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    indicator<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'西峡'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'周口'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'南阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'驻马店'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'郑州'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'洛阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'radar'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">223</span><span class="token punctuation">,</span> <span class="token number">189</span><span class="token punctuation">,</span> <span class="token number">214</span><span class="token punctuation">,</span> <span class="token number">265</span><span class="token punctuation">,</span> <span class="token number">178</span><span class="token punctuation">,</span> <span class="token number">155</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      animationCurve<span class="token punctuation">:</span> <span class="token string">'easeOutBack'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">[</span>option1<span class="token punctuation">,</span> option2<span class="token punctuation">]</span></code></pre></div></div></div> <h2 id="多组雷达图"><a href="#多组雷达图" aria-hidden="true" class="header-anchor">#</a> 多组雷达图</h2> <div class="demo"><div class="chart"></div> <div class="action"><div class="btn blue">切换数据</div> <div class="btn green">重置</div></div></div> <div class="fold-box"><div class="tip">点击以展开或折叠</div> <div class="fold-container fold"><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> option1 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  legend<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'同比'</span><span class="token punctuation">,</span> <span class="token string">'环比'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  radar<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    polygon<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    indicator<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'西峡'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'周口'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'南阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'驻马店'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'郑州'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'洛阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      name<span class="token punctuation">:</span> <span class="token string">'同比'</span><span class="token punctuation">,</span>
+      type<span class="token punctuation">:</span> <span class="token string">'radar'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">111</span><span class="token punctuation">,</span> <span class="token number">256</span><span class="token punctuation">,</span> <span class="token number">178</span><span class="token punctuation">,</span> <span class="token number">152</span><span class="token punctuation">,</span> <span class="token number">266</span><span class="token punctuation">,</span> <span class="token number">132</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      animationCurve<span class="token punctuation">:</span> <span class="token string">'easeOutBounce'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      name<span class="token punctuation">:</span> <span class="token string">'环比'</span><span class="token punctuation">,</span>
+      type<span class="token punctuation">:</span> <span class="token string">'radar'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">222</span><span class="token punctuation">,</span> <span class="token number">245</span><span class="token punctuation">,</span> <span class="token number">220</span><span class="token punctuation">,</span> <span class="token number">130</span><span class="token punctuation">,</span> <span class="token number">240</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      animationCurve<span class="token punctuation">:</span> <span class="token string">'easeOutBounce'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> option2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  legend<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'同比'</span><span class="token punctuation">,</span> <span class="token string">'环比'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  radar<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    polygon<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    indicator<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'西峡'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'周口'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'南阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'驻马店'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'郑州'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'洛阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      name<span class="token punctuation">:</span> <span class="token string">'同比'</span><span class="token punctuation">,</span>
+      type<span class="token punctuation">:</span> <span class="token string">'radar'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">223</span><span class="token punctuation">,</span> <span class="token number">189</span><span class="token punctuation">,</span> <span class="token number">214</span><span class="token punctuation">,</span> <span class="token number">265</span><span class="token punctuation">,</span> <span class="token number">178</span><span class="token punctuation">,</span> <span class="token number">155</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      animationCurve<span class="token punctuation">:</span> <span class="token string">'easeOutBounce'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      name<span class="token punctuation">:</span> <span class="token string">'环比'</span><span class="token punctuation">,</span>
+      type<span class="token punctuation">:</span> <span class="token string">'radar'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">116</span><span class="token punctuation">,</span> <span class="token number">256</span><span class="token punctuation">,</span> <span class="token number">280</span><span class="token punctuation">,</span> <span class="token number">244</span><span class="token punctuation">,</span> <span class="token number">240</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      animationCurve<span class="token punctuation">:</span> <span class="token string">'easeOutBounce'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">[</span>option1<span class="token punctuation">,</span> option2<span class="token punctuation">]</span></code></pre></div></div></div> <h2 id="背景配色"><a href="#背景配色" aria-hidden="true" class="header-anchor">#</a> 背景配色</h2> <div class="demo"><div class="chart"></div> <div class="action"><div class="btn blue">切换数据</div> <div class="btn green">重置</div></div></div> <div class="fold-box"><div class="tip">点击以展开或折叠</div> <div class="fold-container fold"><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> option1 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  radar<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    indicator<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'西峡'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'周口'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'南阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'驻马店'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'郑州'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'洛阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    polygon<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    splitLine<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        stroke<span class="token punctuation">:</span> <span class="token string">'rgba(159, 230, 184, 1)'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    axisLine<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        stroke<span class="token punctuation">:</span> <span class="token string">'rgba(159, 230, 184, 1)'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    splitArea<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      color<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'rgba(159, 230, 184, .2)'</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'radar'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">111</span><span class="token punctuation">,</span> <span class="token number">256</span><span class="token punctuation">,</span> <span class="token number">178</span><span class="token punctuation">,</span> <span class="token number">152</span><span class="token punctuation">,</span> <span class="token number">266</span><span class="token punctuation">,</span> <span class="token number">132</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> option2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  radar<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    indicator<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'西峡'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'周口'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'南阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'驻马店'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'郑州'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'洛阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    polygon<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    splitLine<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        stroke<span class="token punctuation">:</span> <span class="token string">'rgba(159, 230, 184, 1)'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    axisLine<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        stroke<span class="token punctuation">:</span> <span class="token string">'rgba(159, 230, 184, 1)'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    splitArea<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      color<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'rgba(159, 230, 184, .2)'</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'radar'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">223</span><span class="token punctuation">,</span> <span class="token number">189</span><span class="token punctuation">,</span> <span class="token number">214</span><span class="token punctuation">,</span> <span class="token number">265</span><span class="token punctuation">,</span> <span class="token number">178</span><span class="token punctuation">,</span> <span class="token number">155</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">[</span>option1<span class="token punctuation">,</span> option2<span class="token punctuation">]</span></code></pre></div></div></div> <h2 id="多背景配色"><a href="#多背景配色" aria-hidden="true" class="header-anchor">#</a> 多背景配色</h2> <div class="demo"><div class="chart"></div> <div class="action"><div class="btn blue">切换数据</div> <div class="btn green">重置</div></div></div> <div class="fold-box"><div class="tip">点击以展开或折叠</div> <div class="fold-container fold"><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> option1 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  radar<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    indicator<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'西峡'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'周口'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'南阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'驻马店'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'郑州'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'洛阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    polygon<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    splitLine<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        stroke<span class="token punctuation">:</span> <span class="token string">'rgba(159, 230, 184, 1)'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    axisLine<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        stroke<span class="token punctuation">:</span> <span class="token string">'rgba(159, 230, 184, 1)'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    splitArea<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      color<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'rgba(159, 230, 184, .2)'</span><span class="token punctuation">,</span> <span class="token string">'rgba(251, 114, 147, .2)'</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'radar'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">111</span><span class="token punctuation">,</span> <span class="token number">256</span><span class="token punctuation">,</span> <span class="token number">178</span><span class="token punctuation">,</span> <span class="token number">152</span><span class="token punctuation">,</span> <span class="token number">266</span><span class="token punctuation">,</span> <span class="token number">132</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      animationCurve<span class="token punctuation">:</span> <span class="token string">'easeInOutBack'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> option2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  radar<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    indicator<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'西峡'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'周口'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'南阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'驻马店'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'郑州'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'洛阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    polygon<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    splitLine<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        stroke<span class="token punctuation">:</span> <span class="token string">'rgba(159, 230, 184, 1)'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    axisLine<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        stroke<span class="token punctuation">:</span> <span class="token string">'rgba(159, 230, 184, 1)'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    splitArea<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      color<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'rgba(251, 114, 147, .2)'</span><span class="token punctuation">,</span> <span class="token string">'rgba(159, 230, 184, .2)'</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'radar'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">223</span><span class="token punctuation">,</span> <span class="token number">189</span><span class="token punctuation">,</span> <span class="token number">214</span><span class="token punctuation">,</span> <span class="token number">265</span><span class="token punctuation">,</span> <span class="token number">178</span><span class="token punctuation">,</span> <span class="token number">155</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      animationCurve<span class="token punctuation">:</span> <span class="token string">'easeInOutBack'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">[</span>option1<span class="token punctuation">,</span> option2<span class="token punctuation">]</span></code></pre></div></div></div> <h2 id="层叠背景配色"><a href="#层叠背景配色" aria-hidden="true" class="header-anchor">#</a> 层叠背景配色</h2> <div class="demo"><div class="chart"></div> <div class="action"><div class="btn blue">切换数据</div> <div class="btn green">重置</div></div></div> <div class="fold-box"><div class="tip">点击以展开或折叠</div> <div class="fold-container fold"><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> option1 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  radar<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    indicator<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'西峡'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'周口'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'南阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'驻马店'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'郑州'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'洛阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    polygon<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    axisLine<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        stroke<span class="token punctuation">:</span> <span class="token string">'rgba(251, 114, 147, .3)'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    splitLine<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        stroke<span class="token punctuation">:</span> <span class="token string">'rgba(251, 114, 147, .5)'</span><span class="token punctuation">,</span>
+        fill<span class="token punctuation">:</span> <span class="token string">'rgba(251, 114, 147, .2)'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'radar'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">111</span><span class="token punctuation">,</span> <span class="token number">256</span><span class="token punctuation">,</span> <span class="token number">178</span><span class="token punctuation">,</span> <span class="token number">152</span><span class="token punctuation">,</span> <span class="token number">266</span><span class="token punctuation">,</span> <span class="token number">132</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> option2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  radar<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    indicator<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'西峡'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'周口'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'南阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'驻马店'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'郑州'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'洛阳'</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">300</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    polygon<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    axisLine<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        stroke<span class="token punctuation">:</span> <span class="token string">'rgba(230, 114, 209, .3)'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    splitLine<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        stroke<span class="token punctuation">:</span> <span class="token string">'rgba(230, 114, 209, .5)'</span><span class="token punctuation">,</span>
+        fill<span class="token punctuation">:</span> <span class="token string">'rgba(230, 114, 209, .2)'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'radar'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">223</span><span class="token punctuation">,</span> <span class="token number">189</span><span class="token punctuation">,</span> <span class="token number">214</span><span class="token punctuation">,</span> <span class="token number">265</span><span class="token punctuation">,</span> <span class="token number">178</span><span class="token punctuation">,</span> <span class="token number">155</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">[</span>option1<span class="token punctuation">,</span> option2<span class="token punctuation">]</span></code></pre></div></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/charts-document-code/example/pie.html" class="prev">饼状图</a></span> <span class="next"><a href="/charts-document-code/example/gauge.html">仪表盘</a>→
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/charts-document-code/assets/js/app.731d7402.js" defer></script><script src="/charts-document-code/assets/js/5.ec90377f.js" defer></script><script src="/charts-document-code/assets/js/31.40f6c943.js" defer></script><script src="/charts-document-code/assets/js/6.1e4d43cf.js" defer></script>
+  </body>
+</html>

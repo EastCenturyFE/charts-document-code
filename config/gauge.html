@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>series[i] ({type: &#39;gauge&#39;, ...}) | Charts</title>
+    <meta name="description" content="轻量级图表">
+    <link rel="icon" href="/charts-document-code/favicon.ico">
+    
+    <link rel="preload" href="/charts-document-code/assets/css/0.styles.86b1c1b3.css" as="style"><link rel="preload" href="/charts-document-code/assets/js/app.731d7402.js" as="script"><link rel="preload" href="/charts-document-code/assets/js/5.ec90377f.js" as="script"><link rel="preload" href="/charts-document-code/assets/js/15.04387d1b.js" as="script"><link rel="prefetch" href="/charts-document-code/assets/js/1.43c40784.js"><link rel="prefetch" href="/charts-document-code/assets/js/10.790233e7.js"><link rel="prefetch" href="/charts-document-code/assets/js/11.763d3ad8.js"><link rel="prefetch" href="/charts-document-code/assets/js/12.fe21ef1c.js"><link rel="prefetch" href="/charts-document-code/assets/js/13.56d110b8.js"><link rel="prefetch" href="/charts-document-code/assets/js/14.50840d7f.js"><link rel="prefetch" href="/charts-document-code/assets/js/16.ab57aa7a.js"><link rel="prefetch" href="/charts-document-code/assets/js/17.ad65199f.js"><link rel="prefetch" href="/charts-document-code/assets/js/18.f6f76c9b.js"><link rel="prefetch" href="/charts-document-code/assets/js/19.8dce57c7.js"><link rel="prefetch" href="/charts-document-code/assets/js/2.8f24913a.js"><link rel="prefetch" href="/charts-document-code/assets/js/20.4e80c39e.js"><link rel="prefetch" href="/charts-document-code/assets/js/21.70ad0856.js"><link rel="prefetch" href="/charts-document-code/assets/js/22.ccf1d745.js"><link rel="prefetch" href="/charts-document-code/assets/js/23.d8ec4895.js"><link rel="prefetch" href="/charts-document-code/assets/js/24.51626b97.js"><link rel="prefetch" href="/charts-document-code/assets/js/25.726f293d.js"><link rel="prefetch" href="/charts-document-code/assets/js/26.ee545aa8.js"><link rel="prefetch" href="/charts-document-code/assets/js/27.0f83fc0f.js"><link rel="prefetch" href="/charts-document-code/assets/js/28.2ea99494.js"><link rel="prefetch" href="/charts-document-code/assets/js/29.f42586a7.js"><link rel="prefetch" href="/charts-document-code/assets/js/3.cb350d97.js"><link rel="prefetch" href="/charts-document-code/assets/js/30.5eef15ec.js"><link rel="prefetch" href="/charts-document-code/assets/js/31.40f6c943.js"><link rel="prefetch" href="/charts-document-code/assets/js/32.3c597654.js"><link rel="prefetch" href="/charts-document-code/assets/js/33.3f45b2dc.js"><link rel="prefetch" href="/charts-document-code/assets/js/6.1e4d43cf.js"><link rel="prefetch" href="/charts-document-code/assets/js/7.f2eccd42.js"><link rel="prefetch" href="/charts-document-code/assets/js/8.c10c8e02.js"><link rel="prefetch" href="/charts-document-code/assets/js/9.0491f890.js">
+    <link rel="stylesheet" href="/charts-document-code/assets/css/0.styles.86b1c1b3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/charts-document-code/" class="home-link router-link-active"><!----> <span class="site-name">Charts</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/charts-document-code/guide/" class="nav-link">指南</a></div><div class="nav-item"><a href="/charts-document-code/config/" class="nav-link router-link-active">配置项</a></div><div class="nav-item"><a href="/charts-document-code/example/" class="nav-link">实例</a></div><div class="nav-item"><a href="https://github.com/east-century-fex/charts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/charts-document-code/guide/" class="nav-link">指南</a></div><div class="nav-item"><a href="/charts-document-code/config/" class="nav-link router-link-active">配置项</a></div><div class="nav-item"><a href="/charts-document-code/example/" class="nav-link">实例</a></div><div class="nav-item"><a href="https://github.com/east-century-fex/charts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/charts-document-code/config/" class="sidebar-link">配置项</a></li><li><a href="/charts-document-code/config/color.html" class="sidebar-link">color</a></li><li><a href="/charts-document-code/config/title.html" class="sidebar-link">title</a></li><li><a href="/charts-document-code/config/legend.html" class="sidebar-link">legend</a></li><li><a href="/charts-document-code/config/xAxis.html" class="sidebar-link">xAxis</a></li><li><a href="/charts-document-code/config/yAxis.html" class="sidebar-link">yAxis</a></li><li><a href="/charts-document-code/config/grid.html" class="sidebar-link">grid</a></li><li><a href="/charts-document-code/config/radarAxis.html" class="sidebar-link">radar</a></li><li><a href="/charts-document-code/config/line.html" class="sidebar-link">series[i] ({type: 'line', ...})</a></li><li><a href="/charts-document-code/config/bar.html" class="sidebar-link">series[i] ({type: 'bar', ...})</a></li><li><a href="/charts-document-code/config/pie.html" class="sidebar-link">series[i] ({type: 'pie', ...})</a></li><li><a href="/charts-document-code/config/radar.html" class="sidebar-link">series[i] ({type: 'radar', ...})</a></li><li><a href="/charts-document-code/config/gauge.html" class="active sidebar-link">series[i] ({type: 'gauge', ...})</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#show" class="sidebar-link">show</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#name" class="sidebar-link">name</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#center" class="sidebar-link">center</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#radius" class="sidebar-link">radius</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#startangle" class="sidebar-link">startAngle</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#endangle" class="sidebar-link">endAngle</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#min" class="sidebar-link">min</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#max" class="sidebar-link">max</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#splitnum" class="sidebar-link">splitNum</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#arclinewidth" class="sidebar-link">arcLineWidth</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#dataitemstyle" class="sidebar-link">dataItemStyle</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#data" class="sidebar-link">data</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#data-i-name" class="sidebar-link">data[i].name</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#data-i-value" class="sidebar-link">data[i].value</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#data-i-radius" class="sidebar-link">data[i].radius</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#data-i-linewidth" class="sidebar-link">data[i].lineWidth</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#data-i-gradient" class="sidebar-link">data[i].gradient</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#data-i-localgradient" class="sidebar-link">data[i].localGradient</a></li></ul></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#axistick" class="sidebar-link">axisTick</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#axistick-show" class="sidebar-link">axisTick.show</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#axistick-ticklength" class="sidebar-link">axisTick.tickLength</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#axistick-style" class="sidebar-link">axisTick.style</a></li></ul></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#axislabel" class="sidebar-link">axisLabel</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#axislabel-show" class="sidebar-link">axisLabel.show</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#axislabel-data" class="sidebar-link">axisLabel.data</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#axislabel-formatter" class="sidebar-link">axisLabel.formatter</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#axislabel-labelgap" class="sidebar-link">axisLabel.labelGap</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#axislabel-style" class="sidebar-link">axisLabel.style</a></li></ul></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#pointer" class="sidebar-link">pointer</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#pointer-show" class="sidebar-link">pointer.show</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#pointer-valueindex" class="sidebar-link">pointer.valueIndex</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#pointer-style" class="sidebar-link">pointer.style</a></li></ul></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#details" class="sidebar-link">details</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#details-show" class="sidebar-link">details.show</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#details-formatter" class="sidebar-link">details.formatter</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#details-offset" class="sidebar-link">details.offset</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#details-valuetofixed" class="sidebar-link">details.valueToFixed</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#details-position" class="sidebar-link">details.position</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#details-style" class="sidebar-link">details.style</a></li></ul></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#backgroundarc" class="sidebar-link">backgroundArc</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#backgroundarc-show" class="sidebar-link">backgroundArc.show</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#backgroundarc-style" class="sidebar-link">backgroundArc.style</a></li></ul></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#rlevel" class="sidebar-link">rLevel</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#animationcurve" class="sidebar-link">animationCurve</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/gauge.html#animationframe" class="sidebar-link">animationFrame</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="series-i-type-gauge"><a href="#series-i-type-gauge" aria-hidden="true" class="header-anchor">#</a> series[i] ({type: 'gauge', ...})</h1> <p>将series子元素的<code>type</code>属性配置为<code>gauge</code>，即可使用仪表盘。</p> <h2 id="show"><a href="#show" aria-hidden="true" class="header-anchor">#</a> show</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 是否显示该仪表盘
+ * @type {Boolean}
+ * @default show = true
+ */</span>
+</code></pre></div><h2 id="name"><a href="#name" aria-hidden="true" class="header-anchor">#</a> name</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 图例标签名
+ * @type {String}
+ * @default name = ''
+ */</span>
+</code></pre></div><h2 id="center"><a href="#center" aria-hidden="true" class="header-anchor">#</a> center</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 仪表盘中心点
+ * @type {Array}
+ * @default center = ['50%','50%']
+ * @example center = ['50%','50%'] | [100, 100]
+ */</span>
+</code></pre></div><h2 id="radius"><a href="#radius" aria-hidden="true" class="header-anchor">#</a> radius</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 仪表盘半径
+ * @type {String|Number}
+ * @default radius = '60%'
+ * @example radius = '60%' | 100
+ */</span>
+</code></pre></div><h2 id="startangle"><a href="#startangle" aria-hidden="true" class="header-anchor">#</a> startAngle</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 仪表盘起始角度（弧度值）
+ * @type {Number}
+ * @default startAngle = -(Math.PI / 4) * 5
+ * @example startAngle = -Math.PI
+ */</span>
+</code></pre></div><h2 id="endangle"><a href="#endangle" aria-hidden="true" class="header-anchor">#</a> endAngle</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 仪表盘结束角度（弧度值）
+ * @type {Number}
+ * @default endAngle = Math.PI / 4
+ * @example endAngle = 0
+ */</span>
+</code></pre></div><h2 id="min"><a href="#min" aria-hidden="true" class="header-anchor">#</a> min</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 仪表盘最小值
+ * @type {Number}
+ * @default min = 0
+ */</span>
+</code></pre></div><h2 id="max"><a href="#max" aria-hidden="true" class="header-anchor">#</a> max</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 仪表盘最大值
+ * @type {Number}
+ * @default max = 100
+ */</span>
+</code></pre></div><h2 id="splitnum"><a href="#splitnum" aria-hidden="true" class="header-anchor">#</a> splitNum</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 仪表盘分隔数目
+ * @type {Number}
+ * @default splitNum = 5
+ */</span>
+</code></pre></div><h2 id="arclinewidth"><a href="#arclinewidth" aria-hidden="true" class="header-anchor">#</a> arcLineWidth</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 仪表盘圆弧线条宽度
+ * @type {Number}
+ * @default arcLineWidth = 15
+ */</span>
+</code></pre></div><h2 id="dataitemstyle"><a href="#dataitemstyle" aria-hidden="true" class="header-anchor">#</a> dataItemStyle</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description Data元素构成的圆弧的默认样式
+ * @type {Object}
+ * @default dataItemStyle = {Class Style的配置项}
+ */</span>
+</code></pre></div><h2 id="data"><a href="#data" aria-hidden="true" class="header-anchor">#</a> data</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 构成仪表盘的圆弧的数据
+ * @type {Array}
+ * @default data = []
+ */</span>
+</code></pre></div><h3 id="data-i-name"><a href="#data-i-name" aria-hidden="true" class="header-anchor">#</a> data[i].name</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 构成仪表盘的圆弧的名称
+ * @type {Number}
+ * @example name = 'name'
+ */</span>
+</code></pre></div><h3 id="data-i-value"><a href="#data-i-value" aria-hidden="true" class="header-anchor">#</a> data[i].value</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 构成仪表盘的圆弧的值
+ * @type {Number}
+ * @example value = 66
+ */</span>
+</code></pre></div><h3 id="data-i-radius"><a href="#data-i-radius" aria-hidden="true" class="header-anchor">#</a> data[i].radius</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 构成仪表盘的圆弧的半径 (默认与根属性radius的值相同)
+ * @type {String|Number}
+ * @example radius = '50%' | 150
+ */</span>
+</code></pre></div><h3 id="data-i-linewidth"><a href="#data-i-linewidth" aria-hidden="true" class="header-anchor">#</a> data[i].lineWidth</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 构成仪表盘的圆弧的线条宽度 (默认与根属性arcLineWidth的值相)
+ * @type {Number}
+ * @example lineWidth = 10
+ */</span>
+</code></pre></div><h3 id="data-i-gradient"><a href="#data-i-gradient" aria-hidden="true" class="header-anchor">#</a> data[i].gradient</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 构成仪表盘的圆弧的渐变色 (Hex|rgb|rgba)
+ * @type {Array}
+ * @example gradient = ['#000', 'rgb(10, 10, 10)', 'rgba(10, 10, 10, 1)']
+ */</span>
+</code></pre></div><h3 id="data-i-localgradient"><a href="#data-i-localgradient" aria-hidden="true" class="header-anchor">#</a> data[i].localGradient</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 渐变色是否应用局部渐变
+ * @type {Boolean}
+ * @default localGradient = false
+ */</span>
+</code></pre></div><h2 id="axistick"><a href="#axistick" aria-hidden="true" class="header-anchor">#</a> axisTick</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 坐标刻度配置项
+ * @type {Object}
+ */</span>
+</code></pre></div><h3 id="axistick-show"><a href="#axistick-show" aria-hidden="true" class="header-anchor">#</a> axisTick.show</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 是否显示刻度
+ * @type {Boolean}
+ * @default show = true
+ */</span>
+</code></pre></div><h3 id="axistick-ticklength"><a href="#axistick-ticklength" aria-hidden="true" class="header-anchor">#</a> axisTick.tickLength</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 刻度线长度
+ * @type {Number}
+ * @default tickLength = 6
+ */</span>
+</code></pre></div><h3 id="axistick-style"><a href="#axistick-style" aria-hidden="true" class="header-anchor">#</a> axisTick.style</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 刻度线样式
+ * @type {Object} {Class Style的配置项}
+ */</span>
+axisTick<span class="token punctuation">.</span>stype<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  stroke<span class="token punctuation">:</span> <span class="token string">'#999'</span><span class="token punctuation">,</span>
+  lineWidth<span class="token punctuation">:</span> <span class="token number">1</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="axislabel"><a href="#axislabel" aria-hidden="true" class="header-anchor">#</a> axisLabel</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 坐标标签配置项
+ * @type {Object}
+ */</span>
+</code></pre></div><h3 id="axislabel-show"><a href="#axislabel-show" aria-hidden="true" class="header-anchor">#</a> axisLabel.show</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 是否显示坐标标签
+ * @type {Boolean}
+ * @default show = true
+ */</span>
+</code></pre></div><h3 id="axislabel-data"><a href="#axislabel-data" aria-hidden="true" class="header-anchor">#</a> axisLabel.data</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 坐标标签的内容数据（可以自动计算）
+ * @type {Array}
+ * @default data = ['10', '20', ...]
+ */</span>
+</code></pre></div><h3 id="axislabel-formatter"><a href="#axislabel-formatter" aria-hidden="true" class="header-anchor">#</a> axisLabel.formatter</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 坐标标签内容格式
+ * @type {String|Function}
+ * @default formatter = null
+ * @example formatter = '{value}%'
+ * @example formatter = (labelItem) =&gt; (labelItem.value)
+ */</span>
+</code></pre></div><h3 id="axislabel-labelgap"><a href="#axislabel-labelgap" aria-hidden="true" class="header-anchor">#</a> axisLabel.labelGap</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 坐标标签与刻度线间的间隔
+ * @type {String|Function}
+ * @default labelGap = 5
+ */</span>
+</code></pre></div><h3 id="axislabel-style"><a href="#axislabel-style" aria-hidden="true" class="header-anchor">#</a> axisLabel.style</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 坐标标签样式
+ * @type {Object}
+ * @default style = {Configuration Of Class Style}
+ */</span>
+</code></pre></div><h2 id="pointer"><a href="#pointer" aria-hidden="true" class="header-anchor">#</a> pointer</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 仪表盘指针配置项
+ * @type {Object}
+ */</span>
+</code></pre></div><h3 id="pointer-show"><a href="#pointer-show" aria-hidden="true" class="header-anchor">#</a> pointer.show</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 是否显示指针
+ * @type {Boolean}
+ * @default show = true
+ */</span>
+</code></pre></div><h3 id="pointer-valueindex"><a href="#pointer-valueindex" aria-hidden="true" class="header-anchor">#</a> pointer.valueIndex</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 指针从data中获取值的索引
+ * @type {Number}
+ * @default valueIndex = 0 (pointer.value = data[0].value)
+ */</span>
+</code></pre></div><h3 id="pointer-style"><a href="#pointer-style" aria-hidden="true" class="header-anchor">#</a> pointer.style</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 指针样式
+ * @type {Object}
+ * @default style = {Class Style的配置项}
+ */</span>
+pointer<span class="token punctuation">.</span>style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 可以调节scale的值放大缩小指针</span>
+  scale<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  fill<span class="token punctuation">:</span> <span class="token string">'#fb7293'</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="details"><a href="#details" aria-hidden="true" class="header-anchor">#</a> details</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description Data子元素构成的圆弧的详情的配置项
+ * @type {Object}
+ */</span>
+</code></pre></div><h3 id="details-show"><a href="#details-show" aria-hidden="true" class="header-anchor">#</a> details.show</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 是否显示详情
+ * @type {Boolean}
+ * @default show = false
+ */</span>
+</code></pre></div><h3 id="details-formatter"><a href="#details-formatter" aria-hidden="true" class="header-anchor">#</a> details.formatter</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 详情内容格式化
+ * @type {String|Function}
+ * @default formatter = null
+ * @example formatter = '{value}%'
+ * @example formatter = '{name}%'
+ * @example formatter = (dataItem) =&gt; (dataItem.value)
+ */</span>
+</code></pre></div><h3 id="details-offset"><a href="#details-offset" aria-hidden="true" class="header-anchor">#</a> details.offset</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 详情内容位置偏移量
+ * @type {Array}
+ * @default offset = [0, 0]
+ * @example offset = [10, 10]
+ */</span>
+</code></pre></div><h3 id="details-valuetofixed"><a href="#details-valuetofixed" aria-hidden="true" class="header-anchor">#</a> details.valueToFixed</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 数值小数精度
+ * @type {Number}
+ * @default valueToFixed = 0
+ */</span>
+</code></pre></div><h3 id="details-position"><a href="#details-position" aria-hidden="true" class="header-anchor">#</a> details.position</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 详情位置
+ * @type {String}
+ * @default position = 'center'
+ * @example position = 'start' | 'center' | 'end'
+ */</span>
+</code></pre></div><h3 id="details-style"><a href="#details-style" aria-hidden="true" class="header-anchor">#</a> details.style</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 详情样式
+ * @type {Object}
+ * @default style = {Class Style的配置项}
+ */</span>
+style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  fontSize<span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+  fontWeight<span class="token punctuation">:</span> <span class="token string">'bold'</span><span class="token punctuation">,</span>
+  textAlign<span class="token punctuation">:</span> <span class="token string">'center'</span><span class="token punctuation">,</span>
+  textBaseline<span class="token punctuation">:</span> <span class="token string">'middle'</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="backgroundarc"><a href="#backgroundarc" aria-hidden="true" class="header-anchor">#</a> backgroundArc</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 仪表盘背景圆弧配置
+ * @type {Object}
+ */</span>
+</code></pre></div><h3 id="backgroundarc-show"><a href="#backgroundarc-show" aria-hidden="true" class="header-anchor">#</a> backgroundArc.show</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 是否显示背景环
+ * @type {Boolean}
+ * @default show = true
+ */</span>
+</code></pre></div><h3 id="backgroundarc-style"><a href="#backgroundarc-style" aria-hidden="true" class="header-anchor">#</a> backgroundArc.style</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 背景环样式
+ * @type {Object}
+ * @default style = {Class Style的配置项}
+ */</span>
+</code></pre></div><h2 id="rlevel"><a href="#rlevel" aria-hidden="true" class="header-anchor">#</a> rLevel</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 仪表盘渲染级别
+ * 级别高者优先渲染
+ * @type {Number}
+ * @default rLevel = 10
+ */</span>
+</code></pre></div><h2 id="animationcurve"><a href="#animationcurve" aria-hidden="true" class="header-anchor">#</a> animationCurve</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 仪表盘缓动曲线
+ * @type {String}
+ * @default animationCurve = 'easeOutCubic'
+ */</span>
+</code></pre></div><h2 id="animationframe"><a href="#animationframe" aria-hidden="true" class="header-anchor">#</a> animationFrame</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 仪表盘缓动效果帧数
+ * @type {Number}
+ * @default animationFrame = 50
+ */</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/charts-document-code/config/radar.html" class="prev">series[i] ({type: 'radar', ...})</a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/charts-document-code/assets/js/app.731d7402.js" defer></script><script src="/charts-document-code/assets/js/5.ec90377f.js" defer></script><script src="/charts-document-code/assets/js/15.04387d1b.js" defer></script>
+  </body>
+</html>

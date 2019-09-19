@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>series[i] ({type: &#39;line&#39;, ...}) | Charts</title>
+    <meta name="description" content="轻量级图表">
+    <link rel="icon" href="/charts-document-code/favicon.ico">
+    
+    <link rel="preload" href="/charts-document-code/assets/css/0.styles.86b1c1b3.css" as="style"><link rel="preload" href="/charts-document-code/assets/js/app.731d7402.js" as="script"><link rel="preload" href="/charts-document-code/assets/js/5.ec90377f.js" as="script"><link rel="preload" href="/charts-document-code/assets/js/18.f6f76c9b.js" as="script"><link rel="prefetch" href="/charts-document-code/assets/js/1.43c40784.js"><link rel="prefetch" href="/charts-document-code/assets/js/10.790233e7.js"><link rel="prefetch" href="/charts-document-code/assets/js/11.763d3ad8.js"><link rel="prefetch" href="/charts-document-code/assets/js/12.fe21ef1c.js"><link rel="prefetch" href="/charts-document-code/assets/js/13.56d110b8.js"><link rel="prefetch" href="/charts-document-code/assets/js/14.50840d7f.js"><link rel="prefetch" href="/charts-document-code/assets/js/15.04387d1b.js"><link rel="prefetch" href="/charts-document-code/assets/js/16.ab57aa7a.js"><link rel="prefetch" href="/charts-document-code/assets/js/17.ad65199f.js"><link rel="prefetch" href="/charts-document-code/assets/js/19.8dce57c7.js"><link rel="prefetch" href="/charts-document-code/assets/js/2.8f24913a.js"><link rel="prefetch" href="/charts-document-code/assets/js/20.4e80c39e.js"><link rel="prefetch" href="/charts-document-code/assets/js/21.70ad0856.js"><link rel="prefetch" href="/charts-document-code/assets/js/22.ccf1d745.js"><link rel="prefetch" href="/charts-document-code/assets/js/23.d8ec4895.js"><link rel="prefetch" href="/charts-document-code/assets/js/24.51626b97.js"><link rel="prefetch" href="/charts-document-code/assets/js/25.726f293d.js"><link rel="prefetch" href="/charts-document-code/assets/js/26.ee545aa8.js"><link rel="prefetch" href="/charts-document-code/assets/js/27.0f83fc0f.js"><link rel="prefetch" href="/charts-document-code/assets/js/28.2ea99494.js"><link rel="prefetch" href="/charts-document-code/assets/js/29.f42586a7.js"><link rel="prefetch" href="/charts-document-code/assets/js/3.cb350d97.js"><link rel="prefetch" href="/charts-document-code/assets/js/30.5eef15ec.js"><link rel="prefetch" href="/charts-document-code/assets/js/31.40f6c943.js"><link rel="prefetch" href="/charts-document-code/assets/js/32.3c597654.js"><link rel="prefetch" href="/charts-document-code/assets/js/33.3f45b2dc.js"><link rel="prefetch" href="/charts-document-code/assets/js/6.1e4d43cf.js"><link rel="prefetch" href="/charts-document-code/assets/js/7.f2eccd42.js"><link rel="prefetch" href="/charts-document-code/assets/js/8.c10c8e02.js"><link rel="prefetch" href="/charts-document-code/assets/js/9.0491f890.js">
+    <link rel="stylesheet" href="/charts-document-code/assets/css/0.styles.86b1c1b3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/charts-document-code/" class="home-link router-link-active"><!----> <span class="site-name">Charts</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/charts-document-code/guide/" class="nav-link">指南</a></div><div class="nav-item"><a href="/charts-document-code/config/" class="nav-link router-link-active">配置项</a></div><div class="nav-item"><a href="/charts-document-code/example/" class="nav-link">实例</a></div><div class="nav-item"><a href="https://github.com/east-century-fex/charts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/charts-document-code/guide/" class="nav-link">指南</a></div><div class="nav-item"><a href="/charts-document-code/config/" class="nav-link router-link-active">配置项</a></div><div class="nav-item"><a href="/charts-document-code/example/" class="nav-link">实例</a></div><div class="nav-item"><a href="https://github.com/east-century-fex/charts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/charts-document-code/config/" class="sidebar-link">配置项</a></li><li><a href="/charts-document-code/config/color.html" class="sidebar-link">color</a></li><li><a href="/charts-document-code/config/title.html" class="sidebar-link">title</a></li><li><a href="/charts-document-code/config/legend.html" class="sidebar-link">legend</a></li><li><a href="/charts-document-code/config/xAxis.html" class="sidebar-link">xAxis</a></li><li><a href="/charts-document-code/config/yAxis.html" class="sidebar-link">yAxis</a></li><li><a href="/charts-document-code/config/grid.html" class="sidebar-link">grid</a></li><li><a href="/charts-document-code/config/radarAxis.html" class="sidebar-link">radar</a></li><li><a href="/charts-document-code/config/line.html" class="active sidebar-link">series[i] ({type: 'line', ...})</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#show" class="sidebar-link">show</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#name" class="sidebar-link">name</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#stack" class="sidebar-link">stack</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#smooth" class="sidebar-link">smooth</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#xaxisindex" class="sidebar-link">xAxisIndex</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#yaxisindex" class="sidebar-link">yAxisIndex</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#data" class="sidebar-link">data</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#linestyle" class="sidebar-link">lineStyle</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#linepoint" class="sidebar-link">linePoint</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#linepoint-show" class="sidebar-link">linePoint.show</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#linepoint-radius" class="sidebar-link">linePoint.radius</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#linepoint-style" class="sidebar-link">linePoint.style</a></li></ul></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#linearea" class="sidebar-link">lineArea</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#linearea-show" class="sidebar-link">lineArea.show</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#linearea-gradient" class="sidebar-link">lineArea.gradient</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#linearea-style" class="sidebar-link">lineArea.style</a></li></ul></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#label" class="sidebar-link">label</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#label-show" class="sidebar-link">label.show</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#label-position" class="sidebar-link">label.position</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#label-offset" class="sidebar-link">label.offset</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#label-formatter" class="sidebar-link">label.formatter</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#label-style" class="sidebar-link">label.style</a></li></ul></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#rlevel" class="sidebar-link">rLevel</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#animationcurve" class="sidebar-link">animationCurve</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/config/line.html#animationframe" class="sidebar-link">animationFrame</a></li></ul></li><li><a href="/charts-document-code/config/bar.html" class="sidebar-link">series[i] ({type: 'bar', ...})</a></li><li><a href="/charts-document-code/config/pie.html" class="sidebar-link">series[i] ({type: 'pie', ...})</a></li><li><a href="/charts-document-code/config/radar.html" class="sidebar-link">series[i] ({type: 'radar', ...})</a></li><li><a href="/charts-document-code/config/gauge.html" class="sidebar-link">series[i] ({type: 'gauge', ...})</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="series-i-type-line"><a href="#series-i-type-line" aria-hidden="true" class="header-anchor">#</a> series[i] ({type: 'line', ...})</h1> <p>将series子元素的<code>type</code>属性配置为<code>line</code>，即可使用折线图。</p> <h2 id="show"><a href="#show" aria-hidden="true" class="header-anchor">#</a> show</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 是否显示该折线图
+ * @type {Boolean}
+ * @default show = true
+ */</span>
+</code></pre></div><h2 id="name"><a href="#name" aria-hidden="true" class="header-anchor">#</a> name</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 图例标签名
+ * @type {String}
+ * @default name = ''
+ */</span>
+</code></pre></div><h2 id="stack"><a href="#stack" aria-hidden="true" class="header-anchor">#</a> stack</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 数据堆叠
+ * 相同stack的series元素的data值将被叠加（后边的值将被叠加在前边的值上）
+ * @type {String}
+ * @default name = ''
+ */</span>
+</code></pre></div><h2 id="smooth"><a href="#smooth" aria-hidden="true" class="header-anchor">#</a> smooth</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 光滑折线
+ * @type {Boolean}
+ * @default smooth = false
+ */</span>
+</code></pre></div><h2 id="xaxisindex"><a href="#xaxisindex" aria-hidden="true" class="header-anchor">#</a> xAxisIndex</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 折线图x坐标系索引
+ * @type {Number}
+ * @default xAxisIndex = 0
+ * @example xAxisIndex = 0 | 1
+ */</span>
+</code></pre></div><h2 id="yaxisindex"><a href="#yaxisindex" aria-hidden="true" class="header-anchor">#</a> yAxisIndex</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 折线图y坐标系索引
+ * @type {Number}
+ * @default yAxisIndex = 0
+ * @example yAxisIndex = 0 | 1
+ */</span>
+</code></pre></div><h2 id="data"><a href="#data" aria-hidden="true" class="header-anchor">#</a> data</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 构成折线图的数据
+ * @type {Array}
+ * @default data = []
+ * @example data = [100, 200, 300]
+ */</span>
+</code></pre></div><h2 id="linestyle"><a href="#linestyle" aria-hidden="true" class="header-anchor">#</a> lineStyle</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 折线默认样式
+ * @type {Object}
+ * @default style = {Class Style的配置项}
+ */</span>
+lineStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  lineWidth<span class="token punctuation">:</span> <span class="token number">1</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="linepoint"><a href="#linepoint" aria-hidden="true" class="header-anchor">#</a> linePoint</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 折线点配置
+ * @type {Object}
+ */</span>
+</code></pre></div><h3 id="linepoint-show"><a href="#linepoint-show" aria-hidden="true" class="header-anchor">#</a> linePoint.show</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 是否显示该折线点
+ * @type {Boolean}
+ * @default show = true
+ */</span>
+</code></pre></div><h3 id="linepoint-radius"><a href="#linepoint-radius" aria-hidden="true" class="header-anchor">#</a> linePoint.radius</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 折线点半径
+ * @type {Number}
+ * @default radius = 2
+ */</span>
+</code></pre></div><h3 id="linepoint-style"><a href="#linepoint-style" aria-hidden="true" class="header-anchor">#</a> linePoint.style</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 折线点默认样式
+ * @type {Object}
+ * @default style = {Class Style的配置项}
+ */</span>
+style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  fill<span class="token punctuation">:</span> <span class="token string">'#fff'</span><span class="token punctuation">,</span>
+  lineWidth<span class="token punctuation">:</span> <span class="token number">1</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="linearea"><a href="#linearea" aria-hidden="true" class="header-anchor">#</a> lineArea</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 折线区域配置
+ * @type {Object}
+ */</span>
+</code></pre></div><h3 id="linearea-show"><a href="#linearea-show" aria-hidden="true" class="header-anchor">#</a> lineArea.show</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 是否显示折线区域
+ * @type {Boolean}
+ * @default show = false
+ */</span>
+</code></pre></div><h3 id="linearea-gradient"><a href="#linearea-gradient" aria-hidden="true" class="header-anchor">#</a> lineArea.gradient</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 折线区域渐变色 (Hex|rgb|rgba)
+ * @type {Array}
+ * @default gradient = []
+ */</span>
+</code></pre></div><h3 id="linearea-style"><a href="#linearea-style" aria-hidden="true" class="header-anchor">#</a> lineArea.style</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 折线区域默认样式
+ * @type {Object}
+ * @default style = {Class Style的配置项}
+ */</span>
+style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  opacity<span class="token punctuation">:</span> <span class="token number">0.5</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="label"><a href="#label" aria-hidden="true" class="header-anchor">#</a> label</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 折线标签配置
+ * @type {Object}
+ */</span>
+</code></pre></div><h3 id="label-show"><a href="#label-show" aria-hidden="true" class="header-anchor">#</a> label.show</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 是否显示折线标签
+ * @type {Boolean}
+ * @default show = false
+ */</span>
+</code></pre></div><h3 id="label-position"><a href="#label-position" aria-hidden="true" class="header-anchor">#</a> label.position</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 标签位置
+ * @type {String}
+ * @default position = 'top'
+ * @example position = 'top' | 'center' | 'bottom'
+ */</span>
+</code></pre></div><h3 id="label-offset"><a href="#label-offset" aria-hidden="true" class="header-anchor">#</a> label.offset</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 标签位置偏移
+ * @type {Array}
+ * @default offset = [0, -10]
+ */</span>
+</code></pre></div><h3 id="label-formatter"><a href="#label-formatter" aria-hidden="true" class="header-anchor">#</a> label.formatter</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 标签格式化
+ * @type {String|Function}
+ * @default formatter = null
+ * @example formatter = '{value}件'
+ * @example formatter = (dataItem) =&gt; (dataItem.value)
+ */</span>
+</code></pre></div><h3 id="label-style"><a href="#label-style" aria-hidden="true" class="header-anchor">#</a> label.style</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 标签默认样式
+ * @type {Object}
+ * @default style = {Class Style的配置项}
+ */</span>
+style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  fontSize<span class="token punctuation">:</span> <span class="token number">10</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="rlevel"><a href="#rlevel" aria-hidden="true" class="header-anchor">#</a> rLevel</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 折线图渲染级别
+ * 级别高者优先渲染
+ * @type {Number}
+ * @default rLevel = 10
+ */</span>
+</code></pre></div><h2 id="animationcurve"><a href="#animationcurve" aria-hidden="true" class="header-anchor">#</a> animationCurve</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 折线图缓动曲线
+ * @type {String}
+ * @default animationCurve = 'easeOutCubic'
+ */</span>
+</code></pre></div><h2 id="animationframe"><a href="#animationframe" aria-hidden="true" class="header-anchor">#</a> animationFrame</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 折线图缓动效果帧数
+ * @type {Number}
+ * @default animationFrame = 50
+ */</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/charts-document-code/config/radarAxis.html" class="prev">radar</a></span> <span class="next"><a href="/charts-document-code/config/bar.html">series[i] ({type: 'bar', ...})</a>→
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/charts-document-code/assets/js/app.731d7402.js" defer></script><script src="/charts-document-code/assets/js/5.ec90377f.js" defer></script><script src="/charts-document-code/assets/js/18.f6f76c9b.js" defer></script>
+  </body>
+</html>

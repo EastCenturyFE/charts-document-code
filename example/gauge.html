@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>仪表盘 | Charts</title>
+    <meta name="description" content="轻量级图表">
+    <link rel="icon" href="/charts-document-code/favicon.ico">
+    
+    <link rel="preload" href="/charts-document-code/assets/css/0.styles.86b1c1b3.css" as="style"><link rel="preload" href="/charts-document-code/assets/js/app.731d7402.js" as="script"><link rel="preload" href="/charts-document-code/assets/js/5.ec90377f.js" as="script"><link rel="preload" href="/charts-document-code/assets/js/28.2ea99494.js" as="script"><link rel="preload" href="/charts-document-code/assets/js/6.1e4d43cf.js" as="script"><link rel="prefetch" href="/charts-document-code/assets/js/1.43c40784.js"><link rel="prefetch" href="/charts-document-code/assets/js/10.790233e7.js"><link rel="prefetch" href="/charts-document-code/assets/js/11.763d3ad8.js"><link rel="prefetch" href="/charts-document-code/assets/js/12.fe21ef1c.js"><link rel="prefetch" href="/charts-document-code/assets/js/13.56d110b8.js"><link rel="prefetch" href="/charts-document-code/assets/js/14.50840d7f.js"><link rel="prefetch" href="/charts-document-code/assets/js/15.04387d1b.js"><link rel="prefetch" href="/charts-document-code/assets/js/16.ab57aa7a.js"><link rel="prefetch" href="/charts-document-code/assets/js/17.ad65199f.js"><link rel="prefetch" href="/charts-document-code/assets/js/18.f6f76c9b.js"><link rel="prefetch" href="/charts-document-code/assets/js/19.8dce57c7.js"><link rel="prefetch" href="/charts-document-code/assets/js/2.8f24913a.js"><link rel="prefetch" href="/charts-document-code/assets/js/20.4e80c39e.js"><link rel="prefetch" href="/charts-document-code/assets/js/21.70ad0856.js"><link rel="prefetch" href="/charts-document-code/assets/js/22.ccf1d745.js"><link rel="prefetch" href="/charts-document-code/assets/js/23.d8ec4895.js"><link rel="prefetch" href="/charts-document-code/assets/js/24.51626b97.js"><link rel="prefetch" href="/charts-document-code/assets/js/25.726f293d.js"><link rel="prefetch" href="/charts-document-code/assets/js/26.ee545aa8.js"><link rel="prefetch" href="/charts-document-code/assets/js/27.0f83fc0f.js"><link rel="prefetch" href="/charts-document-code/assets/js/29.f42586a7.js"><link rel="prefetch" href="/charts-document-code/assets/js/3.cb350d97.js"><link rel="prefetch" href="/charts-document-code/assets/js/30.5eef15ec.js"><link rel="prefetch" href="/charts-document-code/assets/js/31.40f6c943.js"><link rel="prefetch" href="/charts-document-code/assets/js/32.3c597654.js"><link rel="prefetch" href="/charts-document-code/assets/js/33.3f45b2dc.js"><link rel="prefetch" href="/charts-document-code/assets/js/7.f2eccd42.js"><link rel="prefetch" href="/charts-document-code/assets/js/8.c10c8e02.js"><link rel="prefetch" href="/charts-document-code/assets/js/9.0491f890.js">
+    <link rel="stylesheet" href="/charts-document-code/assets/css/0.styles.86b1c1b3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/charts-document-code/" class="home-link router-link-active"><!----> <span class="site-name">Charts</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/charts-document-code/guide/" class="nav-link">指南</a></div><div class="nav-item"><a href="/charts-document-code/config/" class="nav-link">配置项</a></div><div class="nav-item"><a href="/charts-document-code/example/" class="nav-link router-link-active">实例</a></div><div class="nav-item"><a href="https://github.com/east-century-fex/charts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/charts-document-code/guide/" class="nav-link">指南</a></div><div class="nav-item"><a href="/charts-document-code/config/" class="nav-link">配置项</a></div><div class="nav-item"><a href="/charts-document-code/example/" class="nav-link router-link-active">实例</a></div><div class="nav-item"><a href="https://github.com/east-century-fex/charts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/charts-document-code/example/" class="sidebar-link">实例</a></li><li><a href="/charts-document-code/example/line.html" class="sidebar-link">折线图</a></li><li><a href="/charts-document-code/example/bar.html" class="sidebar-link">柱状图</a></li><li><a href="/charts-document-code/example/pie.html" class="sidebar-link">饼状图</a></li><li><a href="/charts-document-code/example/radar.html" class="sidebar-link">雷达图</a></li><li><a href="/charts-document-code/example/gauge.html" class="active sidebar-link">仪表盘</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/charts-document-code/example/gauge.html#基本仪表盘" class="sidebar-link">基本仪表盘</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/example/gauge.html#详情仪表盘" class="sidebar-link">详情仪表盘</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/example/gauge.html#渐变仪表盘" class="sidebar-link">渐变仪表盘</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/example/gauge.html#多组仪表盘" class="sidebar-link">多组仪表盘</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/example/gauge.html#局部渐变" class="sidebar-link">局部渐变</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/example/gauge.html#百分比环" class="sidebar-link">百分比环</a></li><li class="sidebar-sub-header"><a href="/charts-document-code/example/gauge.html#多同心百分比环" class="sidebar-link">多同心百分比环</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="仪表盘"><a href="#仪表盘" aria-hidden="true" class="header-anchor">#</a> 仪表盘</h1> <h2 id="基本仪表盘"><a href="#基本仪表盘" aria-hidden="true" class="header-anchor">#</a> 基本仪表盘</h2> <div class="demo"><div class="chart"></div> <div class="action"><div class="btn blue">切换数据</div> <div class="btn green">重置</div></div></div> <div class="fold-box"><div class="tip">点击以展开或折叠</div> <div class="fold-container fold"><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> option1 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    text<span class="token punctuation">:</span> <span class="token string">'剩余油量表'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'gauge'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'itemA'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">55</span> <span class="token punctuation">}</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      axisLabel<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        formatter<span class="token punctuation">:</span> <span class="token string">'{value}%'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      animationCurve<span class="token punctuation">:</span> <span class="token string">'easeInOutBack'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> option2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    text<span class="token punctuation">:</span> <span class="token string">'剩余油量表'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'gauge'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'itemA'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">89</span> <span class="token punctuation">}</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      axisLabel<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        formatter<span class="token punctuation">:</span> <span class="token string">'{value}%'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      animationCurve<span class="token punctuation">:</span> <span class="token string">'easeInOutBack'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">[</span>option1<span class="token punctuation">,</span> option2<span class="token punctuation">]</span></code></pre></div></div></div> <h2 id="详情仪表盘"><a href="#详情仪表盘" aria-hidden="true" class="header-anchor">#</a> 详情仪表盘</h2> <div class="demo"><div class="chart"></div> <div class="action"><div class="btn blue">切换数据</div> <div class="btn green">重置</div></div></div> <div class="fold-box"><div class="tip">点击以展开或折叠</div> <div class="fold-container fold"><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> option1 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    text<span class="token punctuation">:</span> <span class="token string">'剩余油量表'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'gauge'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'itemA'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">55</span> <span class="token punctuation">}</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      axisLabel<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        formatter<span class="token punctuation">:</span> <span class="token string">'{value}%'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      details<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        offset<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        formatter<span class="token punctuation">:</span> <span class="token string">'剩余{value}%'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      animationCurve<span class="token punctuation">:</span> <span class="token string">'easeOutBack'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> option2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    text<span class="token punctuation">:</span> <span class="token string">'剩余油量表'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'gauge'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'itemA'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">89</span> <span class="token punctuation">}</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      axisLabel<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        formatter<span class="token punctuation">:</span> <span class="token string">'{value}%'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      details<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        offset<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        formatter<span class="token punctuation">:</span> <span class="token string">'剩余{value}%'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      animationCurve<span class="token punctuation">:</span> <span class="token string">'easeOutBack'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">[</span>option1<span class="token punctuation">,</span> option2<span class="token punctuation">]</span></code></pre></div></div></div> <h2 id="渐变仪表盘"><a href="#渐变仪表盘" aria-hidden="true" class="header-anchor">#</a> 渐变仪表盘</h2> <div class="demo"><div class="chart"></div> <div class="action"><div class="btn blue">切换数据</div> <div class="btn green">重置</div></div></div> <div class="fold-box"><div class="tip">点击以展开或折叠</div> <div class="fold-container fold"><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> option1 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    text<span class="token punctuation">:</span> <span class="token string">'剩余油量表'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'gauge'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'itemA'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">55</span><span class="token punctuation">,</span> gradient<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'#e7bcf3'</span><span class="token punctuation">,</span> <span class="token string">'#e690d1'</span><span class="token punctuation">,</span> <span class="token string">'#fb7293'</span><span class="token punctuation">]</span> <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      axisLabel<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        formatter<span class="token punctuation">:</span> <span class="token string">'{value}%'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      animationCurve<span class="token punctuation">:</span> <span class="token string">'easeOutBounce'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> option2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    text<span class="token punctuation">:</span> <span class="token string">'剩余油量表'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'gauge'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'itemA'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">89</span><span class="token punctuation">,</span> gradient<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'#e7bcf3'</span><span class="token punctuation">,</span> <span class="token string">'#e690d1'</span><span class="token punctuation">,</span> <span class="token string">'#fb7293'</span><span class="token punctuation">]</span> <span class="token punctuation">}</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      axisLabel<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        formatter<span class="token punctuation">:</span> <span class="token string">'{value}%'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      animationCurve<span class="token punctuation">:</span> <span class="token string">'easeOutBounce'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">[</span>option1<span class="token punctuation">,</span> option2<span class="token punctuation">]</span></code></pre></div></div></div> <h2 id="多组仪表盘"><a href="#多组仪表盘" aria-hidden="true" class="header-anchor">#</a> 多组仪表盘</h2> <div class="demo"><div class="chart"></div> <div class="action"><div class="btn blue">切换数据</div> <div class="btn green">重置</div></div></div> <div class="fold-box"><div class="tip">点击以展开或折叠</div> <div class="fold-container fold"><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> option1 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    text<span class="token punctuation">:</span> <span class="token string">'剩余油量表'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'gauge'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'油箱A'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">59</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'油箱B'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">78</span><span class="token punctuation">,</span> radius<span class="token punctuation">:</span> <span class="token string">'40%'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'油箱C'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">45</span><span class="token punctuation">,</span> radius<span class="token punctuation">:</span> <span class="token string">'20%'</span> <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      axisLabel<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        formatter<span class="token punctuation">:</span> <span class="token string">'{value}%'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      pointer<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        valueIndex<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+        style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          scale<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">.6</span><span class="token punctuation">,</span> <span class="token number">.6</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      details<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        formatter<span class="token punctuation">:</span> <span class="token string">'{name}剩余{value}%'</span><span class="token punctuation">,</span>
+        position<span class="token punctuation">:</span> <span class="token string">'start'</span><span class="token punctuation">,</span>
+        offset<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          fontSize<span class="token punctuation">:</span> <span class="token number">13</span><span class="token punctuation">,</span>
+          textAlign<span class="token punctuation">:</span> <span class="token string">'left'</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> option2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    text<span class="token punctuation">:</span> <span class="token string">'剩余油量表'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'gauge'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'油箱A'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">78</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'油箱B'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">65</span><span class="token punctuation">,</span> radius<span class="token punctuation">:</span> <span class="token string">'40%'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'油箱C'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">55</span><span class="token punctuation">,</span> radius<span class="token punctuation">:</span> <span class="token string">'20%'</span> <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      axisLabel<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        formatter<span class="token punctuation">:</span> <span class="token string">'{value}%'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      pointer<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        valueIndex<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+        style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          scale<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">.6</span><span class="token punctuation">,</span> <span class="token number">.6</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      details<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        formatter<span class="token punctuation">:</span> <span class="token string">'{name}剩余{value}%'</span><span class="token punctuation">,</span>
+        position<span class="token punctuation">:</span> <span class="token string">'start'</span><span class="token punctuation">,</span>
+        offset<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          fontSize<span class="token punctuation">:</span> <span class="token number">13</span><span class="token punctuation">,</span>
+          textAlign<span class="token punctuation">:</span> <span class="token string">'left'</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">[</span>option1<span class="token punctuation">,</span> option2<span class="token punctuation">]</span></code></pre></div></div></div> <h2 id="局部渐变"><a href="#局部渐变" aria-hidden="true" class="header-anchor">#</a> 局部渐变</h2> <div class="demo"><div class="chart"></div> <div class="action"><div class="btn blue">切换数据</div> <div class="btn green">重置</div></div></div> <div class="fold-box"><div class="tip">点击以展开或折叠</div> <div class="fold-container fold"><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> option1 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    text<span class="token punctuation">:</span> <span class="token string">'剩余油量表'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'gauge'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'itemA'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">55</span><span class="token punctuation">,</span> gradient<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'#e7bcf3'</span><span class="token punctuation">,</span> <span class="token string">'#e690d1'</span><span class="token punctuation">,</span> <span class="token string">'#fb7293'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> localGradient<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      axisLabel<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        formatter<span class="token punctuation">:</span> <span class="token string">'{value}%'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> option2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    text<span class="token punctuation">:</span> <span class="token string">'剩余油量表'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'gauge'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'itemA'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">89</span><span class="token punctuation">,</span> gradient<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'#e7bcf3'</span><span class="token punctuation">,</span> <span class="token string">'#e690d1'</span><span class="token punctuation">,</span> <span class="token string">'#fb7293'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> localGradient<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      axisLabel<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        formatter<span class="token punctuation">:</span> <span class="token string">'{value}%'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">[</span>option1<span class="token punctuation">,</span> option2<span class="token punctuation">]</span></code></pre></div></div></div> <h2 id="百分比环"><a href="#百分比环" aria-hidden="true" class="header-anchor">#</a> 百分比环</h2> <div class="demo"><div class="chart"></div> <div class="action"><div class="btn blue">切换数据</div> <div class="btn green">重置</div></div></div> <div class="fold-box"><div class="tip">点击以展开或折叠</div> <div class="fold-container fold"><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> option1 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'gauge'</span><span class="token punctuation">,</span>
+      startAngle<span class="token punctuation">:</span> <span class="token operator">-</span>Math<span class="token punctuation">.</span><span class="token constant">PI</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">,</span>
+      endAngle<span class="token punctuation">:</span> Math<span class="token punctuation">.</span><span class="token constant">PI</span> <span class="token operator">*</span> <span class="token number">1.5</span><span class="token punctuation">,</span>
+      arcLineWidth<span class="token punctuation">:</span> <span class="token number">25</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'itemA'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">65</span><span class="token punctuation">,</span> gradient<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'#03c2fd'</span><span class="token punctuation">,</span> <span class="token string">'#1ed3e5'</span><span class="token punctuation">,</span> <span class="token string">'#2fded6'</span><span class="token punctuation">]</span> <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      axisLabel<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      axisTick<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      pointer<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      dataItemStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        lineCap<span class="token punctuation">:</span> <span class="token string">'round'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      details<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        formatter<span class="token punctuation">:</span> <span class="token string">'{value}%'</span><span class="token punctuation">,</span>
+        style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            fill<span class="token punctuation">:</span> <span class="token string">'#1ed3e5'</span><span class="token punctuation">,</span>
+            fontSize<span class="token punctuation">:</span> <span class="token number">35</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> option2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'gauge'</span><span class="token punctuation">,</span>
+      startAngle<span class="token punctuation">:</span> <span class="token operator">-</span>Math<span class="token punctuation">.</span><span class="token constant">PI</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">,</span>
+      endAngle<span class="token punctuation">:</span> Math<span class="token punctuation">.</span><span class="token constant">PI</span> <span class="token operator">*</span> <span class="token number">1.5</span><span class="token punctuation">,</span>
+      arcLineWidth<span class="token punctuation">:</span> <span class="token number">25</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'itemA'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">89</span><span class="token punctuation">,</span> gradient<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'#03c2fd'</span><span class="token punctuation">,</span> <span class="token string">'#1ed3e5'</span><span class="token punctuation">,</span> <span class="token string">'#2fded6'</span><span class="token punctuation">]</span> <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      axisLabel<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      axisTick<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      pointer<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      dataItemStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        lineCap<span class="token punctuation">:</span> <span class="token string">'round'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      details<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        formatter<span class="token punctuation">:</span> <span class="token string">'{value}%'</span><span class="token punctuation">,</span>
+        style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            fill<span class="token punctuation">:</span> <span class="token string">'#1ed3e5'</span><span class="token punctuation">,</span>
+            fontSize<span class="token punctuation">:</span> <span class="token number">35</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">[</span>option1<span class="token punctuation">,</span> option2<span class="token punctuation">]</span></code></pre></div></div></div> <h2 id="多同心百分比环"><a href="#多同心百分比环" aria-hidden="true" class="header-anchor">#</a> 多同心百分比环</h2> <div class="demo"><div class="chart"></div> <div class="action"><div class="btn blue">切换数据</div> <div class="btn green">重置</div></div></div> <div class="fold-box"><div class="tip">点击以展开或折叠</div> <div class="fold-container fold"><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> option1 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'gauge'</span><span class="token punctuation">,</span>
+      startAngle<span class="token punctuation">:</span> <span class="token operator">-</span>Math<span class="token punctuation">.</span><span class="token constant">PI</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">,</span>
+      endAngle<span class="token punctuation">:</span> Math<span class="token punctuation">.</span><span class="token constant">PI</span> <span class="token operator">*</span> <span class="token number">1.5</span><span class="token punctuation">,</span>
+      arcLineWidth<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'A'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">25</span><span class="token punctuation">,</span> gradient<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'#03c2fd'</span><span class="token punctuation">,</span> <span class="token string">'#1ed3e5'</span><span class="token punctuation">,</span> <span class="token string">'#2fded6'</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'B'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">45</span><span class="token punctuation">,</span> gradient<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'#03c2fd'</span><span class="token punctuation">,</span> <span class="token string">'#1ed3e5'</span><span class="token punctuation">,</span> <span class="token string">'#2fded6'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> radius<span class="token punctuation">:</span> <span class="token string">'53%'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'C'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">65</span><span class="token punctuation">,</span> gradient<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'#03c2fd'</span><span class="token punctuation">,</span> <span class="token string">'#1ed3e5'</span><span class="token punctuation">,</span> <span class="token string">'#2fded6'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> radius<span class="token punctuation">:</span> <span class="token string">'46%'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'D'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">35</span><span class="token punctuation">,</span> gradient<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'#03c2fd'</span><span class="token punctuation">,</span> <span class="token string">'#1ed3e5'</span><span class="token punctuation">,</span> <span class="token string">'#2fded6'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> radius<span class="token punctuation">:</span> <span class="token string">'39%'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'E'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">25</span><span class="token punctuation">,</span> gradient<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'#03c2fd'</span><span class="token punctuation">,</span> <span class="token string">'#1ed3e5'</span><span class="token punctuation">,</span> <span class="token string">'#2fded6'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> radius<span class="token punctuation">:</span> <span class="token string">'32%'</span> <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      axisLabel<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      axisTick<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      pointer<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      dataItemStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        lineCap<span class="token punctuation">:</span> <span class="token string">'round'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      backgroundArc<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      details<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        formatter<span class="token punctuation">:</span> <span class="token string">'{name}占比{value}%'</span><span class="token punctuation">,</span>
+        position<span class="token punctuation">:</span> <span class="token string">'start'</span><span class="token punctuation">,</span>
+        offset<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            fill<span class="token punctuation">:</span> <span class="token string">'#1ed3e5'</span><span class="token punctuation">,</span>
+            fontSize<span class="token punctuation">:</span> <span class="token number">13</span><span class="token punctuation">,</span>
+            textAlign<span class="token punctuation">:</span> <span class="token string">'right'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> option2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  series<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'gauge'</span><span class="token punctuation">,</span>
+      startAngle<span class="token punctuation">:</span> <span class="token operator">-</span>Math<span class="token punctuation">.</span><span class="token constant">PI</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">,</span>
+      endAngle<span class="token punctuation">:</span> Math<span class="token punctuation">.</span><span class="token constant">PI</span> <span class="token operator">*</span> <span class="token number">1.5</span><span class="token punctuation">,</span>
+      arcLineWidth<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'A'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">32</span><span class="token punctuation">,</span> gradient<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'#03c2fd'</span><span class="token punctuation">,</span> <span class="token string">'#1ed3e5'</span><span class="token punctuation">,</span> <span class="token string">'#2fded6'</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'B'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">78</span><span class="token punctuation">,</span> gradient<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'#03c2fd'</span><span class="token punctuation">,</span> <span class="token string">'#1ed3e5'</span><span class="token punctuation">,</span> <span class="token string">'#2fded6'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> radius<span class="token punctuation">:</span> <span class="token string">'53%'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'C'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">55</span><span class="token punctuation">,</span> gradient<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'#03c2fd'</span><span class="token punctuation">,</span> <span class="token string">'#1ed3e5'</span><span class="token punctuation">,</span> <span class="token string">'#2fded6'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> radius<span class="token punctuation">:</span> <span class="token string">'46%'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'D'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">65</span><span class="token punctuation">,</span> gradient<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'#03c2fd'</span><span class="token punctuation">,</span> <span class="token string">'#1ed3e5'</span><span class="token punctuation">,</span> <span class="token string">'#2fded6'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> radius<span class="token punctuation">:</span> <span class="token string">'39%'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">'E'</span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token number">45</span><span class="token punctuation">,</span> gradient<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'#03c2fd'</span><span class="token punctuation">,</span> <span class="token string">'#1ed3e5'</span><span class="token punctuation">,</span> <span class="token string">'#2fded6'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> radius<span class="token punctuation">:</span> <span class="token string">'32%'</span> <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      axisLabel<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      axisTick<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      pointer<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      dataItemStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        lineCap<span class="token punctuation">:</span> <span class="token string">'round'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      backgroundArc<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      details<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        formatter<span class="token punctuation">:</span> <span class="token string">'{name}占比{value}%'</span><span class="token punctuation">,</span>
+        position<span class="token punctuation">:</span> <span class="token string">'start'</span><span class="token punctuation">,</span>
+        offset<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            fill<span class="token punctuation">:</span> <span class="token string">'#1ed3e5'</span><span class="token punctuation">,</span>
+            fontSize<span class="token punctuation">:</span> <span class="token number">13</span><span class="token punctuation">,</span>
+            textAlign<span class="token punctuation">:</span> <span class="token string">'right'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">[</span>option1<span class="token punctuation">,</span> option2<span class="token punctuation">]</span></code></pre></div></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/charts-document-code/example/radar.html" class="prev">雷达图</a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/charts-document-code/assets/js/app.731d7402.js" defer></script><script src="/charts-document-code/assets/js/5.ec90377f.js" defer></script><script src="/charts-document-code/assets/js/28.2ea99494.js" defer></script><script src="/charts-document-code/assets/js/6.1e4d43cf.js" defer></script>
+  </body>
+</html>
